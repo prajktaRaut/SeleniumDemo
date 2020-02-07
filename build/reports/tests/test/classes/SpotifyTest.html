@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class SpotifyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class SpotifyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; SpotifyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.861s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="givenMethod_ToGetUserProfile"></a>
+<h3 class="failures">givenMethod_ToGetUserProfile</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
+	at SpotifyTest.givenMethod_ToGetUserProfile(SpotifyTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">givenMethod_ToGetUserProfile</td>
+<td class="failures">2.861s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>{
+    &quot;country&quot;: &quot;IN&quot;,
+    &quot;display_name&quot;: &quot;data&quot;,
+    &quot;email&quot;: &quot;prajktasraut16@gmail.com&quot;,
+    &quot;explicit_content&quot;: {
+        &quot;filter_enabled&quot;: false,
+        &quot;filter_locked&quot;: false
+    },
+    &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+    },
+    &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 0
+    },
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+    &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+    &quot;images&quot;: [
+        
+    ],
+    &quot;product&quot;: &quot;open&quot;,
+    &quot;type&quot;: &quot;user&quot;,
+    &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+}
+User id is kkjrxo2ldcrtkavnglhwu6t41
+-----------------------------------------------------------
+{
+    &quot;display_name&quot;: &quot;data&quot;,
+    &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+    },
+    &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 0
+    },
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+    &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+    &quot;images&quot;: [
+        
+    ],
+    &quot;type&quot;: &quot;user&quot;,
+    &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+}
+-----------------------------------------------------------
+kkjrxo2ldcrtkavnglhwu6t41
+{
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists?offset=0&amp;limit=20&quot;,
+    &quot;items&quot;: [
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;Latest song&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/4vvL3EMrp6p5R84vRpT02X&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X&quot;,
+            &quot;id&quot;: &quot;4vvL3EMrp6p5R84vRpT02X&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Heart Touching Songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;data&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixkN2U2ZmVkYWQ0MmY4M2YxYmI3Y2NlODQ5YzJkYWVkMjIzMTQ2MDBi&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:4vvL3EMrp6p5R84vRpT02X&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;old song&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/2rze9116EeKuhAPVWFcvdV&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV&quot;,
+            &quot;id&quot;: &quot;2rze9116EeKuhAPVWFcvdV&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Favourite Songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;data&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixlN2ZkNzk3YmYyZjAzZTdiZWIxYjFmYzcwNTQ5MjUyOTQ0NDM4YTk1&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:2rze9116EeKuhAPVWFcvdV&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;Journey to Mumbai&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/0036Osy5U3noOx8QzM12gw&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw&quot;,
+            &quot;id&quot;: &quot;0036Osy5U3noOx8QzM12gw&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;old songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;data&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;Miw3ZjhlNTlhZWU2MWU0ZDBhMzVjMDdiZDE3ZGNkODFmZGVhY2Q4M2Nh&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:0036Osy5U3noOx8QzM12gw&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;Journey to Mumbai&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3VSBJHBSy8usDDhRJQV68v&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v&quot;,
+            &quot;id&quot;: &quot;3VSBJHBSy8usDDhRJQV68v&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;old songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;data&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MiwzMWZjNWI2N2ZiMzJhYjg5NTFkYjIxOWI1MGJlNmRjNmRiYTRjODNm&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3VSBJHBSy8usDDhRJQV68v&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;Updated playlist description&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/2n7nZULaNhB8YP7Hu3C31g&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g&quot;,
+            &quot;id&quot;: &quot;2n7nZULaNhB8YP7Hu3C31g&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Latest new songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;data&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;id&quot;: &quot;kkjrxo2ldcrtkavnglhwu6t41&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:kkjrxo2ldcrtkavnglhwu6t41&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;OCw0MzQ4ZTA1NjdhYmI1ZDdmYTdmMmRmODNhYjdkNzE3NGQ5N2RiODIw&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:2n7nZULaNhB8YP7Hu3C31g&quot;
+        }
+    ],
+    &quot;limit&quot;: 20,
+    &quot;next&quot;: null,
+    &quot;offset&quot;: 0,
+    &quot;previous&quot;: null,
+    &quot;total&quot;: 5
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at 07-Feb-2020, 8:56:31 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -14,6 +14,14 @@ public class NewsTest {
             List<String> newsHeading = new ArrayList<String>();
             List<String> newsPoints = new ArrayList<String>();
             Map<String,Integer> newsMap = new HashMap<>();
+
+         /*   newsHeading.add("i am happy");
+            newsHeading.add("The world");
+            newsHeading.add("The The The girl is beautiful");
+            newsPoints.add("10");
+            newsPoints.add("8");
+            newsPoints.add("2");*/
+
             driver.get("https://news.ycombinator.com");
             List<WebElement> newsElements = driver.findElements(By.cssSelector("a.storylink"));
             List<WebElement> scorePoints = driver.findElements(By.cssSelector("tr td span.score"));
@@ -28,7 +36,7 @@ public class NewsTest {
         {
 
             System.out.println(webElement.getText().substring(0,webElement.getText().length()-7));
-            newsHeading.add( webElement.getText().substring(0,webElement.getText().length()-7));
+            newsPoints.add( webElement.getText().substring(0,webElement.getText().length()-7));
         }
 
          for(int i=0;i<newsHeading.size();i++)
@@ -39,8 +47,10 @@ public class NewsTest {
          }
 
         List<String> listOfWords = listOfWords(newsHeading);
-        findWords(listOfWords,newsMap);
-
+        String maxWord = findWords(listOfWords);
+        System.out.println("The word occure maximum times is "+maxWord);
+        String maxNewsHeading = getMostPopularNews(newsMap,maxWord);
+        System.out.println("Most popular news is "+maxNewsHeading);
 
     }
     static List<String> listOfWords(List<String> news)
@@ -56,8 +66,9 @@ public class NewsTest {
         return listOfWords;
     }
 
-    static void findWords(List<String> arr,Map<String,Integer> newsMap)
+    static String findWords(List<String> arr)
     {
+        Map<String,Integer> newsMap = new HashMap<>();
         for (int i = 0; i < arr.size(); i++) {
 
             if (newsMap.containsKey(arr.get(i))) {
@@ -68,7 +79,7 @@ public class NewsTest {
             }
         }
         String highestValue = getHighest(newsMap);
-        System.out.println("Highest value is "+highestValue);
+        return highestValue;
     }
 
     static String getHighest(Map<String,Integer> newsMap)
@@ -83,7 +94,26 @@ public class NewsTest {
                 key = me.getKey();
             }
         }
-        System.out.println("------------------------"+key);
+        System.out.println(key+"--"+value);
         return key;
+    }
+
+    static String getMostPopularNews(Map<String,Integer> newsMap, String mostRepetedWord)
+    {
+        int value=0;
+        String popularWord =" ";
+        for (Map.Entry<String,Integer> newNewsMap : newsMap.entrySet()) {
+
+            if (newNewsMap.getKey().contains(mostRepetedWord)) {
+
+
+                if (newNewsMap.getValue()>value)
+                {
+                    value=newNewsMap.getValue();
+                    popularWord=newNewsMap.getKey();
+                }
+            }
+        }
+        return popularWord;
     }
 }
