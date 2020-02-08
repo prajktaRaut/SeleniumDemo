@@ -1,113 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SpotifyTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-07T15:26:28" hostname="admin1-HP-EliteBook-Folio-9480m" time="2.861">
+<testsuite name="SpotifyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-08T06:58:00" hostname="admin1-HP-EliteBook-Folio-9480m" time="3.498">
   <properties/>
-  <testcase name="givenMethod_ToGetUserProfile" classname="SpotifyTest" time="2.861">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
-	at SpotifyTest.givenMethod_ToGetUserProfile(SpotifyTest.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
-  <system-out><![CDATA[{
-    "country": "IN",
-    "display_name": "data",
-    "email": "prajktasraut16@gmail.com",
-    "explicit_content": {
-        "filter_enabled": false,
-        "filter_locked": false
-    },
-    "external_urls": {
-        "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
-    },
-    "followers": {
-        "href": null,
-        "total": 0
-    },
-    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
-    "id": "kkjrxo2ldcrtkavnglhwu6t41",
-    "images": [
-        
-    ],
-    "product": "open",
-    "type": "user",
-    "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
-}
-User id is kkjrxo2ldcrtkavnglhwu6t41
------------------------------------------------------------
-{
-    "display_name": "data",
-    "external_urls": {
-        "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
-    },
-    "followers": {
-        "href": null,
-        "total": 0
-    },
-    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
-    "id": "kkjrxo2ldcrtkavnglhwu6t41",
-    "images": [
-        
-    ],
-    "type": "user",
-    "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
-}
------------------------------------------------------------
-kkjrxo2ldcrtkavnglhwu6t41
+  <testcase name="toGetPlaylistIdAndUpdatePlaylistId" classname="SpotifyTest" time="3.498"/>
+  <system-out><![CDATA[-------- get playlist Id --------
 {
     "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists?offset=0&limit=20",
     "items": [
         {
             "collaborative": false,
-            "description": "Latest song",
+            "description": "Updated playlist description",
             "external_urls": {
                 "spotify": "https://open.spotify.com/playlist/4vvL3EMrp6p5R84vRpT02X"
             },
@@ -116,7 +17,7 @@ kkjrxo2ldcrtkavnglhwu6t41
             "images": [
                 
             ],
-            "name": "Heart Touching Songs",
+            "name": "Arjit singh songs",
             "owner": {
                 "display_name": "data",
                 "external_urls": {
@@ -129,7 +30,7 @@ kkjrxo2ldcrtkavnglhwu6t41
             },
             "primary_color": null,
             "public": false,
-            "snapshot_id": "MixkN2U2ZmVkYWQ0MmY4M2YxYmI3Y2NlODQ5YzJkYWVkMjIzMTQ2MDBi",
+            "snapshot_id": "NiwwODBiNDQwMjA4ZWIxZDU5MGQ3M2ZiZWY3YTZlNGY3N2I3NjBmNTlj",
             "tracks": {
                 "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X/tracks",
                 "total": 0
@@ -139,7 +40,7 @@ kkjrxo2ldcrtkavnglhwu6t41
         },
         {
             "collaborative": false,
-            "description": "old song",
+            "description": "Latest song",
             "external_urls": {
                 "spotify": "https://open.spotify.com/playlist/2rze9116EeKuhAPVWFcvdV"
             },
@@ -148,7 +49,7 @@ kkjrxo2ldcrtkavnglhwu6t41
             "images": [
                 
             ],
-            "name": "Favourite Songs",
+            "name": "Sonu nigam Songs",
             "owner": {
                 "display_name": "data",
                 "external_urls": {
@@ -161,7 +62,182 @@ kkjrxo2ldcrtkavnglhwu6t41
             },
             "primary_color": null,
             "public": false,
-            "snapshot_id": "MixlN2ZkNzk3YmYyZjAzZTdiZWIxYjFmYzcwNTQ5MjUyOTQ0NDM4YTk1",
+            "snapshot_id": "MTIsODdkMmMzMmY1ZThkNTIxODQ0Y2IzYWQ3ZGZiMWI2MGY1ODUzMjg1Mg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2rze9116EeKuhAPVWFcvdV"
+        },
+        {
+            "collaborative": false,
+            "description": "Journey to Mumbai",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0036Osy5U3noOx8QzM12gw"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw",
+            "id": "0036Osy5U3noOx8QzM12gw",
+            "images": [
+                
+            ],
+            "name": "old songs",
+            "owner": {
+                "display_name": "data",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                "type": "user",
+                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "Miw3ZjhlNTlhZWU2MWU0ZDBhMzVjMDdiZDE3ZGNkODFmZGVhY2Q4M2Nh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0036Osy5U3noOx8QzM12gw"
+        },
+        {
+            "collaborative": false,
+            "description": "Journey to Mumbai",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3VSBJHBSy8usDDhRJQV68v"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v",
+            "id": "3VSBJHBSy8usDDhRJQV68v",
+            "images": [
+                
+            ],
+            "name": "old songs",
+            "owner": {
+                "display_name": "data",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                "type": "user",
+                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MiwzMWZjNWI2N2ZiMzJhYjg5NTFkYjIxOWI1MGJlNmRjNmRiYTRjODNm",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3VSBJHBSy8usDDhRJQV68v"
+        },
+        {
+            "collaborative": false,
+            "description": "Updated playlist description",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2n7nZULaNhB8YP7Hu3C31g"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g",
+            "id": "2n7nZULaNhB8YP7Hu3C31g",
+            "images": [
+                
+            ],
+            "name": "Latest new songs",
+            "owner": {
+                "display_name": "data",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                "type": "user",
+                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "OCw0MzQ4ZTA1NjdhYmI1ZDdmYTdmMmRmODNhYjdkNzE3NGQ5N2RiODIw",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2n7nZULaNhB8YP7Hu3C31g"
+        }
+    ],
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 5
+}
+Playlist id is 2rze9116EeKuhAPVWFcvdV
+-------- Updating playlist --------
+
+--------playlist is Updated--------
+-------- Updated playlist --------
+{
+    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists?offset=0&limit=20",
+    "items": [
+        {
+            "collaborative": false,
+            "description": "Updated playlist description",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4vvL3EMrp6p5R84vRpT02X"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X",
+            "id": "4vvL3EMrp6p5R84vRpT02X",
+            "images": [
+                
+            ],
+            "name": "Arjit singh songs",
+            "owner": {
+                "display_name": "data",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                "type": "user",
+                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NiwwODBiNDQwMjA4ZWIxZDU5MGQ3M2ZiZWY3YTZlNGY3N2I3NjBmNTlj",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4vvL3EMrp6p5R84vRpT02X"
+        },
+        {
+            "collaborative": false,
+            "description": "Latest song",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2rze9116EeKuhAPVWFcvdV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV",
+            "id": "2rze9116EeKuhAPVWFcvdV",
+            "images": [
+                
+            ],
+            "name": "Sonu nigam Songs",
+            "owner": {
+                "display_name": "data",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                "type": "user",
+                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTQsMGI0NmM1Yjg4M2IxNmUzMzkxYmJkYThhZTQ2M2RhMzhjZDAwMmY4ZQ==",
             "tracks": {
                 "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV/tracks",
                 "total": 0

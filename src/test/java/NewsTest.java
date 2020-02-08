@@ -11,8 +11,8 @@ public class NewsTest {
     public void name() {
             System.setProperty("webdriver.chrome.driver","/home/admin1/Desktop/JavaDemo/Drivers/chromedriver");
             WebDriver driver=new ChromeDriver();
-            List<String> newsHeading = new ArrayList<String>();
-            List<String> newsPoints = new ArrayList<String>();
+            List<String> newsHeading = new ArrayList<>();
+            List<String> newsPoints = new ArrayList<>();
             Map<String,Integer> newsMap = new HashMap<>();
 
          /*   newsHeading.add("i am happy");

@@ -11,8 +11,26 @@ import org.testng.annotations.Test;
 
 public class SpotifyTest {
 
-    String token="Bearer BQB8FfnJ-nz2tTz3EhragA3Zi5xDQZghYOxK2KsHm1OFww_WF0B5Q5GHY-DsEmON3Tk0-jQfN9_8e5p-QNw04jatCHAjE5QPTZSMzmz3KhUmT_bZ_7SxAWxF0YHXnhNMpdFeg-xsbG9lsbBwkcjWBS87Hy2b3udYXVm10afq1vj_yTHNdMjA-KWfunfLrmle-1rgEzwKqA62Ym4zCiNFlJAFActXCzT3W4I-W8sCmHMPfopsDDn8Abks3y6a9XsbpUtJt_IBk9vhQF6mrb_aBIFJ7Vq_CA";
+    String token="Bearer BQBjWCUAlbt8cKOZHcx50T24UwChlKhz7z_nEQuWXq8XzPxD-HJmA88TiwOo_Zl6jjGT5Ord3tENQH8iZaL8qIF5aUiU_ci5qH_ntGFQHrqLtrfUC-0Oewg0TflmlENZdqJ5R6qpMyAtuuVCsOJTzR0iso57y22YumE1NGQgQO8fgE81OGE3S4YAYHn0xVloDzdSjFP7A83EZGkVDLp6V3qdM0DQW-GayM0MZPPAkaDJDi249njF2Nnw5MuSy8Js5lLbSe5IvgyLQfewB2c6QghuiUEN_Q";
     String userId="";
+
+    @Test
+    public void givenMethod_ToGetCountPlaylistBeforeAdding() {
+        Response response = RestAssured.given()
+                .header("Accept","application/json")
+                .header("Content-Type","application/json")
+                .header("Authorization",token)
+                .when()
+                .get("https://api.spotify.com/v1/me/playlists");
+        ResponseBody body = response.getBody();
+        Object object = new JsonParser().parse(body.prettyPrint());
+        String resAsString = response.asString();
+        JsonPath jsonPath = new JsonPath(resAsString);
+        int count = jsonPath.getInt("total");
+        System.out.println("Total count is "+count);
+        Assert.assertEquals(6,count);
+    }
+
     @Test
     public void givenMethod_ToGetUserProfile() {
         // To get the user profile
@@ -44,107 +62,19 @@ public class SpotifyTest {
         responseOfUserProfile.then().assertThat().statusCode(200);
 
         System.out.println("-----------------------------------------------------------");
-       //To get count of player list
-        Response responseOfPlayerListCount = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .when()
-                .get("https://api.spotify.com/v1/users/"+userId+"/playlists");
-        System.out.println(userId);
-        ResponseBody body3 = responseOfPlayerListCount.getBody();
-        Object object3 = new JsonParser().parse(body3.prettyPrint());
-        String resAsString1 = responseOfPlayerListCount.asString();
-        JsonPath jsonPaths = new JsonPath(resAsString);
-        int count = jsonPath.getInt("total");
-        System.out.println("Total count is "+count);
-        Assert.assertEquals(5,count);
 
-        /*//To add player List
-        Response response = RestAssured.given()
+        //To add player List
+        Response responseForList = RestAssured.given()
                 .header("Accept","application/json")
                 .header("Content-Type","application/json")
                 .header("Authorization",token)
-                .body("{\"name\": \"Heart Touching Songs\",\"description\": \"Latest song\",\"public\": \"false\"}")
+                .body("{\"name\": \"Heart  Songs\",\"description\": \"Latest song\",\"public\": \"false\"}")
                 .when()
                 .post("https://api.spotify.com/v1/users/"+userId+"/playlists");
-        ResponseBody body = response.getBody();
-        Object object = new JsonParser().parse(body.prettyPrint());
-        response.then().assertThat().statusCode(201);
-
-        // To get count of after adding new player list into player list
-        Response responseOfGetCount = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .when()
-                .get("https://api.spotify.com/v1/users/"+userId+"/playlists");
-        ResponseBody countBody = responseOfGetCount.getBody();
-        Object objects = new JsonParser().parse(countBody.prettyPrint());
-        String responceString = responseOfGetCount.asString();
-        JsonPath json = new JsonPath(responceString);
-        int countOfPlayerList = jsonPath.getInt("total");
-        System.out.println("Total count is "+countOfPlayerList);
-        Assert.assertEquals(6,countOfPlayerList);*/
+        ResponseBody responseBody = responseForList.getBody();
+        Object jsonObject = new JsonParser().parse(responseBody.prettyPrint());
+        responseForList.then().assertThat().statusCode(201);
     }
-
-    /*@Test
-    public void givenMethod_ToGetUserProfileById() {
-                Response response = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .when()
-                .get("https://api.spotify.com/v1/users/"+userId);
-        ResponseBody body = response.getBody();
-        Object object = new JsonParser().parse(body.prettyPrint());
-        response.then().assertThat().statusCode(200);
-    }
-
-    @Test
-    public void givenMethod_ToCreatePlaylist() {
-        Response response = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .body("{\"name\": \"old songs\",\"description\": \"Journey to Mumbai\",\"public\": \"false\"}")
-                .when()
-                .post("https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists");
-        ResponseBody body = response.getBody();
-        Object object = new JsonParser().parse(body.prettyPrint());
-        response.then().assertThat().statusCode(201);
-    }
-
-    @Test
-    public void givenMethod_ToGetCountOfPlaylist() {
-        Response response = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .when()
-                .get("https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists");
-        ResponseBody body = response.getBody();
-        Object object = new JsonParser().parse(body.prettyPrint());
-        String resAsString = response.asString();
-        JsonPath jsonPath = new JsonPath(resAsString);
-        int count = jsonPath.getInt("total");
-        System.out.println("Total count is "+count);
-        Assert.assertEquals(3,count);
-    }
-
-    @Test
-    public void givenMethod_ToAddNewPlaylist() {
-        Response response = RestAssured.given()
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
-                .header("Authorization",token)
-                .body("{\"name\": \"Favourite Songs\",\"description\": \"old song\",\"public\": \"false\"}")
-                .when()
-                .post("https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists");
-        ResponseBody body = response.getBody();
-        Object object = new JsonParser().parse(body.prettyPrint());
-        response.then().assertThat().statusCode(201);
-    }*/
 
     @Test
     public void givenMethod_ToGetCountPlaylistAfterAdding() {
@@ -153,13 +83,56 @@ public class SpotifyTest {
                 .header("Content-Type","application/json")
                 .header("Authorization",token)
                 .when()
-                .get("https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists");
+                .get("https://api.spotify.com/v1/me/playlists");
         ResponseBody body = response.getBody();
         Object object = new JsonParser().parse(body.prettyPrint());
         String resAsString = response.asString();
         JsonPath jsonPath = new JsonPath(resAsString);
         int count = jsonPath.getInt("total");
         System.out.println("Total count is "+count);
-        Assert.assertEquals(5,count);
+        Assert.assertEquals(6,count);
+    }
+
+    //To get playlist Id And Update Playlist
+    @Test
+    public void toGetPlaylistIdAndUpdatePlaylistId() {
+        //Get playlist id
+        System.out.println("-------- get playlist Id --------");
+        Response response = RestAssured.given()
+                .header("Accept","application/json")
+                .header("Content-Type","application/json")
+                .header("Authorization",token)
+                .when()
+                .get("https://api.spotify.com/v1/me/playlists");
+        ResponseBody body = response.getBody();
+        Object object = new JsonParser().parse(body.prettyPrint());
+        String resAs = response.asString();
+        JsonPath json = new JsonPath(resAs);
+        String playlistId = json.getString("items[1].id");
+        System.out.println("Playlist id is "+playlistId);
+
+        // Updating playlist
+        Response responseOfPlaylist = RestAssured.given()
+                .header("Accept","application/json")
+                .header("Content-Type","application/json")
+                .header("Authorization",token)
+                .body("{\"name\": \"Sonu nigam Songs\",\"description\": \"Latest song\",\"public\": false}")
+                .when()
+                .put("https://api.spotify.com/v1/playlists/"+playlistId);
+        ResponseBody responseBody = responseOfPlaylist.getBody();
+        Object jsonElement = new JsonParser().parse(responseBody.prettyPrint());
+        responseOfPlaylist.then().assertThat().statusCode(200);
+        System.out.println("--------playlist is Updated--------");
+
+        //Get updated playlist
+        System.out.println("-------- Updated playlist --------");
+        Response res = RestAssured.given()
+                .header("Accept","application/json")
+                .header("Content-Type","application/json")
+                .header("Authorization",token)
+                .when()
+                .get("https://api.spotify.com/v1/me/playlists");
+        ResponseBody bodyToGetPlaylist = res.getBody();
+        Object object1 = new JsonParser().parse(bodyToGetPlaylist.prettyPrint());
     }
 }

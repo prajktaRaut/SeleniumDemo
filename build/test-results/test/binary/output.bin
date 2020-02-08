@@ -1,55 +1,11 @@
-{
-    "country": "IN",
-    "display_name": "data",
-)    "email": "prajktasraut16@gmail.com",
-    "explicit_content": {
-!        "filter_enabled": false,
-        "filter_locked": false
-    },
-    "external_urls": {
-M        "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
-    },
-    "followers": {
-        "href": null,
-        "total": 0
-    },
-J    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
-'    "id": "kkjrxo2ldcrtkavnglhwu6t41",
-    "images": [
-	        
-    ],
-    "product": "open",
-    "type": "user",
-4    "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
-}
-%User id is kkjrxo2ldcrtkavnglhwu6t41
-<-----------------------------------------------------------
-{
-    "display_name": "data",
-    "external_urls": {
-M        "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
-    },
-    "followers": {
-        "href": null,
-        "total": 0
-    },
-J    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
-'    "id": "kkjrxo2ldcrtkavnglhwu6t41",
-    "images": [
-	        
-    ],
-    "type": "user",
-4    "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
-}
-<-----------------------------------------------------------
-kkjrxo2ldcrtkavnglhwu6t41
+"-------- get playlist Id --------
 {
 f    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists?offset=0&limit=20",
     "items": [
 
         {
 $            "collaborative": false,
-*            "description": "Latest song",
+;            "description": "Updated playlist description",
             "external_urls": {
 V                "spotify": "https://open.spotify.com/playlist/4vvL3EMrp6p5R84vRpT02X"
             },
@@ -58,7 +14,7 @@
             "images": [
                 
             ],
-,            "name": "Heart Touching Songs",
+)            "name": "Arjit singh songs",
             "owner": {
 (                "display_name": "data",
 #                "external_urls": {
@@ -71,7 +27,7 @@
             },
 #            "primary_color": null,
             "public": false,
-W            "snapshot_id": "MixkN2U2ZmVkYWQ0MmY4M2YxYmI3Y2NlODQ5YzJkYWVkMjIzMTQ2MDBi",
+W            "snapshot_id": "NiwwODBiNDQwMjA4ZWIxZDU5MGQ3M2ZiZWY3YTZlNGY3N2I3NjBmNTlj",
             "tracks": {
 ^                "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X/tracks",
                 "total": 0
@@ -82,7 +38,7 @@
 
         {
 $            "collaborative": false,
-'            "description": "old song",
+*            "description": "Latest song",
             "external_urls": {
 V                "spotify": "https://open.spotify.com/playlist/2rze9116EeKuhAPVWFcvdV"
             },
@@ -91,7 +47,7 @@
             "images": [
                 
             ],
-'            "name": "Favourite Songs",
+(            "name": "Sonu nigam Songs",
             "owner": {
 (                "display_name": "data",
 #                "external_urls": {
@@ -104,7 +60,188 @@
             },
 #            "primary_color": null,
             "public": false,
-W            "snapshot_id": "MixlN2ZkNzk3YmYyZjAzZTdiZWIxYjFmYzcwNTQ5MjUyOTQ0NDM4YTk1",
+[            "snapshot_id": "MTIsODdkMmMzMmY1ZThkNTIxODQ0Y2IzYWQ3ZGZiMWI2MGY1ODUzMjg1Mg==",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:2rze9116EeKuhAPVWFcvdV"
+        },
+
+        {
+$            "collaborative": false,
+0            "description": "Journey to Mumbai",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/0036Osy5U3noOx8QzM12gw"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw",
+,            "id": "0036Osy5U3noOx8QzM12gw",
+            "images": [
+                
+            ],
+!            "name": "old songs",
+            "owner": {
+(                "display_name": "data",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+V                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+3                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                 "type": "user",
+@                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "Miw3ZjhlNTlhZWU2MWU0ZDBhMzVjMDdiZDE3ZGNkODFmZGVhY2Q4M2Nh",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/0036Osy5U3noOx8QzM12gw/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:0036Osy5U3noOx8QzM12gw"
+        },
+
+        {
+$            "collaborative": false,
+0            "description": "Journey to Mumbai",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3VSBJHBSy8usDDhRJQV68v"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v",
+,            "id": "3VSBJHBSy8usDDhRJQV68v",
+            "images": [
+                
+            ],
+!            "name": "old songs",
+            "owner": {
+(                "display_name": "data",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+V                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+3                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                 "type": "user",
+@                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MiwzMWZjNWI2N2ZiMzJhYjg5NTFkYjIxOWI1MGJlNmRjNmRiYTRjODNm",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3VSBJHBSy8usDDhRJQV68v/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3VSBJHBSy8usDDhRJQV68v"
+        },
+
+        {
+$            "collaborative": false,
+;            "description": "Updated playlist description",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/2n7nZULaNhB8YP7Hu3C31g"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g",
+,            "id": "2n7nZULaNhB8YP7Hu3C31g",
+            "images": [
+                
+            ],
+(            "name": "Latest new songs",
+            "owner": {
+(                "display_name": "data",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+V                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+3                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                 "type": "user",
+@                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "OCw0MzQ4ZTA1NjdhYmI1ZDdmYTdmMmRmODNhYjdkNzE3NGQ5N2RiODIw",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/2n7nZULaNhB8YP7Hu3C31g/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:2n7nZULaNhB8YP7Hu3C31g"
+
+        }
+    ],
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 5
+}
+&Playlist id is 2rze9116EeKuhAPVWFcvdV
+$-------- Updating playlist --------
+
+$--------playlist is Updated--------
+#-------- Updated playlist --------
+{
+f    "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41/playlists?offset=0&limit=20",
+    "items": [
+
+        {
+$            "collaborative": false,
+;            "description": "Updated playlist description",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/4vvL3EMrp6p5R84vRpT02X"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X",
+,            "id": "4vvL3EMrp6p5R84vRpT02X",
+            "images": [
+                
+            ],
+)            "name": "Arjit singh songs",
+            "owner": {
+(                "display_name": "data",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+V                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+3                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                 "type": "user",
+@                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NiwwODBiNDQwMjA4ZWIxZDU5MGQ3M2ZiZWY3YTZlNGY3N2I3NjBmNTlj",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/4vvL3EMrp6p5R84vRpT02X/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:4vvL3EMrp6p5R84vRpT02X"
+        },
+
+        {
+$            "collaborative": false,
+*            "description": "Latest song",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/2rze9116EeKuhAPVWFcvdV"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV",
+,            "id": "2rze9116EeKuhAPVWFcvdV",
+            "images": [
+                
+            ],
+(            "name": "Sonu nigam Songs",
+            "owner": {
+(                "display_name": "data",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/kkjrxo2ldcrtkavnglhwu6t41"
+                },
+V                "href": "https://api.spotify.com/v1/users/kkjrxo2ldcrtkavnglhwu6t41",
+3                "id": "kkjrxo2ldcrtkavnglhwu6t41",
+                 "type": "user",
+@                "uri": "spotify:user:kkjrxo2ldcrtkavnglhwu6t41"
+            },
+#            "primary_color": null,
+            "public": false,
+[            "snapshot_id": "MTQsMGI0NmM1Yjg4M2IxNmUzMzkxYmJkYThhZTQ2M2RhMzhjZDAwMmY4ZQ==",
             "tracks": {
 ^                "href": "https://api.spotify.com/v1/playlists/2rze9116EeKuhAPVWFcvdV/tracks",
                 "total": 0
